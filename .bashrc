@@ -8,3 +8,7 @@ export HISTCONTROL=ignorespace;ignoredups
 export HISTTIMEFORMAT='%Y-%m-%d %H:%M:%S '
 alias bot='cd $(dirname $(find . | tail -1))'
 shopt -s cdspell
+
+if [ "$MSYSTEM" ]; then
+    alias xclip=clip
+fi
