@@ -12,4 +12,11 @@ shopt -s cdspell
 
 if [ "$MSYSTEM" ]; then
     alias xclip=clip
+    export MSYS_HOME=$HOME
+    export WORKON_HOME=$HOME/.virtualenvs
+    export PROJECT_HOME=$HOME/dev
+    if [ -e /c/Python27/Scripts/virtualenvwrapper.sh ]; then
+        source /c/Python27/Scripts/virtualenvwrapper.sh
+    fi
 fi
+
