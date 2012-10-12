@@ -9,6 +9,8 @@ export HISTTIMEFORMAT='%Y-%m-%d %H:%M:%S '
 export HISTIGNORE='pwd:ls:ll'
 alias bot='cd $(dirname $(find . | tail -1))'
 shopt -s cdspell
+alias g='git'
+complete -o default -o nospace -F _git g
 
 if [ "$MSYSTEM" ]; then
     alias xclip=clip

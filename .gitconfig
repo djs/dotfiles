@@ -1,0 +1,29 @@
+[user]
+	name = Dan Savilonis
+	email = djs@n-cube.org
+[gui]
+	fontdiff = -family \"Liberation Mono\" -size 10 -weight normal -slant roman -underline 0 -overstrike 0
+	spellingdictionary = en_US
+[advice]
+	detachedHead = false
+	statusHints = false
+[core]
+	excludesfile = ~/gitignore
+	preloadindex = true
+[diff]
+	renames = copy
+[gc]
+	reflogexpire = 6.months
+	reflogexpireunreachable = 2.months
+[rerere]
+	enabled = true
+[help]
+	autocorrect = 5
+[alias]
+	co = checkout
+	ci = commit
+	st = status
+	graph = log --oneline --graph
+	amend = commit --amend
+	dc = diff --cached
+	ri = rebase --interactive
