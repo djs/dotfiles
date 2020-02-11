@@ -1,0 +1,5 @@
+[user]
+	name = Dan Savilonis
+	email = djs-github@outlook.com
+[core]
+	autocrlf = input
